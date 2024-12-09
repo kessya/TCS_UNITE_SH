@@ -2,11 +2,14 @@
 
 This is an example implementation of the [Taxon Concept Standard](https://github.com/tdwg/tcs2/tree/master/docs/tcs-terms) (TCS) applied to UNITE](https://unite.ut.ee) Taxon Hypotheses — a unified system for the DNA based fungal species linked to the classification.
 
+
 ## Example (JSON-LD)
 
 GBIF record link - https://www.gbif.org/species/227690399/verbatim
+
 [[example-1.jsonld]](https://github.com/kessya/TCS_UNITE_SH/blob/main/examples/example-1.jsonld) SH0089686.10FU (3.0%) => SH0867949.10FU (1.5%) => SH1220176.10FU (1.0%)
 
+```json
 {
   "@context": [
     "https://raw.githubusercontent.com/tdwg/tcs2/master/examples/context.jsonld",
@@ -30,7 +33,7 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      **"uniteDistance": "3.0",**
+      "uniteDistance": "3.0",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -58,7 +61,7 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      **"uniteDistance": "1.5",**
+      "uniteDistance": "1.5",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -92,7 +95,7 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      **"uniteDistance": "1.0",**
+      "uniteDistance": "1.0",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -126,6 +129,8 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
     }
   ]
 }
+```
+
 
 ## Issues
 
