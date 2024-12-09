@@ -1,12 +1,3 @@
-# TCS_UNITE_SH
-
-This is an example implementation of the [Taxon Concept Standard](https://github.com/tdwg/tcs2/tree/master/docs/tcs-terms) (TCS) applied to UNITE](https://unite.ut.ee) Taxon Hypotheses — a unified system for the DNA based fungal species linked to the classification.
-
-## Example (JSON-LD)
-
-GBIF record link - https://www.gbif.org/species/227690399/verbatim
-[[example-1.jsonld]](https://github.com/kessya/TCS_UNITE_SH/blob/main/examples/example-1.jsonld) SH0089686.10FU (3.0%) => SH0867949.10FU (1.5%) => SH1220176.10FU (1.0%)
-
 {
   "@context": [
     "https://raw.githubusercontent.com/tdwg/tcs2/master/examples/context.jsonld",
@@ -30,7 +21,7 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      **"uniteDistance": "3.0",**
+      "uniteDistance": "3.0",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -58,7 +49,7 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      **"uniteDistance": "1.5",**
+      "uniteDistance": "1.5",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -92,7 +83,7 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      **"uniteDistance": "1.0",**
+      "uniteDistance": "1.0",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -126,23 +117,3 @@ GBIF record link - https://www.gbif.org/species/227690399/verbatim
     }
   ]
 }
-
-## Issues
-
-**tcs:taxonRank**
-
-According to [TCS 2](https://github.com/tdwg/tcs2/tree/master/docs/tcs-terms), the comments for the taxonRank term state that:
-
-*This property takes an object or IRI and it is recommended to use a value from an existing controlled vocabulary. While there is no TDWG vocabulary yet, the GBIF Taxonomic Rank Vocabulary (https://rs.gbif.org/vocabulary/gbif/rank.xml) is recommended.*
-
-*A TaxonName takes its taxonRank from the taxonConcept it is applied to, so this property can also be used on a (stand-alone) TaxonName object.*
-
-From the UNITE perspective, for the DNA-based taxon hypotheses, we would like to see the possibility for defining new taxon ranks that reflect the methodology used to calculate these species hypotheses — in our case, the genetic distance between the two closest species hypotheses (e.g., 0.5%, 1.0%, 1.5%, 2.0%, 2.5%, or 3.0%). This issue could also be addressed by introducing a new term, *uniteDistance* (as shown in the example JSON-LD object), referring to the UNITE-associated metric.
-
-**Taxonomic circumscriptions**
-
-Taken from [TCS 2 feature report](https://github.com/tdwg/tcs2/tree/master/docs/feature-report):
-
-*The most significant thing that has been left out of TCS 2 for now is the circumscription or definition of taxa. TCS 1 has the CharacterCircumscription and SpecimenCircumscription elements, translated to DescribedBy and CircumscribedBy, respectively, in the TDWG Ontology. These have been left out of the initial release of TCS 2, because we are not aware of any systems using them and because it is not immediately apparent how they should be used, especially for CharacterCircumscription, or that they are the only and best way to express circumscription in TCS. Just because it is not included yet does not mean circumscription is not important. The TCS Maintenance Group has every intention of adding circumscription to TCS at a later stage in a separate effort. If we are to include circumscription in TCS, it should be done in a way that it is operational and computer-tractable. Lists of characters (or descriptions) and lists of specimens are better accommodated in other TDWG standards, like Plinian Core and SDD.*
-
-The UNITE team is especially interested in expressing the contents of taxon and species hypotheses - including specimen and sequence identifiers - as taxonomic circumscriptions that form part of taxon concepts.
