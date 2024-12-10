@@ -5,7 +5,7 @@
       "skosxl": "http://www.w3.org/2008/05/skos-xl#"
     },
     {
-      "uniteDistance": "https://unite.ut.ee/terms/0.1/distance"
+      "verbatimTaxonRank": "https://unite.ut.ee/terms/0.1/distance"
     }
   ],
   "@graph": [
@@ -21,7 +21,7 @@
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      "uniteDistance": "3.0",
+      "verbatimTaxonRank": "3.0",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -49,7 +49,7 @@
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      "uniteDistance": "1.5",
+      "verbatimTaxonRank": "1.5",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
@@ -83,7 +83,7 @@
       "accordingTo": {
         "@id": "https://unite.ut.ee"
       },
-      "uniteDistance": "1.0",
+      "verbatimTaxonRank": "1.0",
       "isIncludedIn": {
         "@id": "https://doi.plutof.ut.ee/doi/10.15156/BIO/TH100177",
         "accordingTo": {
