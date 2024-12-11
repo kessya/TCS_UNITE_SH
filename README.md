@@ -1,6 +1,6 @@
 # TCS_UNITE_SH
 
-This is an example implementation of the [Taxon Concept Standard](https://github.com/tdwg/tcs2/tree/master/docs/tcs-terms) (TCS) applied to UNITE](https://unite.ut.ee) Taxon Hypotheses — a unified system for the DNA based fungal species linked to the classification.
+This is an example implementation of the [Taxon Concept Standard](https://github.com/tdwg/tcs2/tree/master/docs/tcs-terms) (TCS) applied to [UNITE](https://unite.ut.ee) Taxon Hypotheses — a unified system for the DNA based fungal species linked to the classification.
 
 
 ## Example (JSON-LD)
