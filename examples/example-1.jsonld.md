@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://raw.githubusercontent.com/tdwg/tcs2/master/examples/context.jsonld",
+    "https://github.com/kessya/TCS_UNITE_SH/blob/main/examples/context.jsonld",
     {
       "skosxl": "http://www.w3.org/2008/05/skos-xl#"
     },
