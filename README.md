@@ -177,14 +177,14 @@ The UNITE team is particularly interested in expressing the contents of taxon an
     {
       "sequenceCircumscription": [
         {
-          "dwc:references": [
+          "dwc:associatedSequences": [
             {
-              "reference": "https://www.ncbi.nlm.nih.gov/nuccore/KY774023",
-              "accession": "KY774023"
+              "url": "https://www.ncbi.nlm.nih.gov/nuccore/KY774023",
+              "accessionNumber": "KY774023"
             },
             {
-              "reference": "https://unite.ut.ee/bl_forw.php?id=4671378",
-              "accession": "UDB01535148"
+              "url": "https://unite.ut.ee/bl_forw.php?id=4671378",
+              "accessionNumber": "UDB01535148"
             }
           ]
         }
